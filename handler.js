@@ -975,8 +975,8 @@ if (chat) {
 if (!('isBanned' in chat)) chat.isBanned = false         
 if (!('welcome' in chat)) chat.welcome = true           
 if (!('detect' in chat)) chat.detect = false               
-if (!('sWelcome' in chat)) chat.sWelcome = ''          
-if (!('sBye' in chat)) chat.sBye = ''                    
+if (!('sWelcome' in chat)) chat.sWelcome = true          
+if (!('sBye' in chat)) chat.sBye = true                    
 if (!('sPromote' in chat)) chat.sPromote = ''             
 if (!('sDemote' in chat)) chat.sDemote = '' 
 if (!('sCondition' in chat)) chat.sCondition = ''
@@ -988,8 +988,8 @@ if (!('autosticker' in chat)) chat.autosticker = false
 if (!('audios' in chat)) chat.audios = true               
 if (!('antiver' in chat)) chat.antiver = false 
 if (!('antiPorn' in chat)) chat.antiPorn = true     
-if (!('antiLink' in chat)) chat.antiLink = false     
-if (!('antiLink2' in chat)) chat.antiLink2 = false
+if (!('antiLink' in chat)) chat.antiLink = true    
+if (!('antiLink2' in chat)) chat.antiLink2 = true
 if (!('antiTiktok' in chat)) chat.antiTiktok = false
 if (!('antiYoutube' in chat)) chat.antiYoutube = false
 if (!('antiTelegram' in chat)) chat.antiTelegram = false
@@ -1002,7 +1002,7 @@ if (!('antiTwitch' in chat)) chat.antiTwitch = false
 if (!('antifake' in chat)) chat.antifake = false
 if (!('reaction' in chat)) chat.reaction = true    
 if (!('viewonce' in chat)) chat.viewonce = false       
-if (!('modoadmin' in chat)) chat.modoadmin = false  
+if (!('modoadmin' in chat)) chat.modoadmin = true  
 if (!('autorespond' in chat)) chat.autorespond = true
 if (!('antitoxic' in chat)) chat.antitoxic = true
 if (!('game' in chat)) chat.game = true
@@ -1023,8 +1023,8 @@ global.db.data.chats[m.chat] = {
 isBanned: false,
 welcome: true,
 detect: true,
-sWelcome: '',
-sBye: '',
+sWelcome: true,
+sBye: true,
 sPromote: '',
 sDemote: '', 
 sCondition: '', 
@@ -1036,8 +1036,8 @@ autosticker: false,
 audios: false,
 antiver: true,
 antiPorn: true,
-antiLink: false,
-antiLink2: false,
+antiLink: true,
+antiLink2: true,
 antiTiktok: false,
 antiYoutube: false,
 antiTelegram: false,
@@ -1050,7 +1050,7 @@ antiTwitch: false,
 antifake: false,
 reaction: true,
 viewonce: false,
-modoadmin: false,
+modoadmin: true,
 autorespond: true,
 antitoxic: true,
 game: true, 
@@ -1074,7 +1074,7 @@ if (!('autoread2' in settings)) settings.autoread2 = false
 if (!('restrict' in settings)) settings.restrict = false
 if (!('temporal' in settings)) settings.temporal = false
 if (!('anticommand' in settings)) settings.anticommand = false
-if (!('antiPrivate' in settings)) settings.antiPrivate = false
+if (!('antiPrivate' in settings)) settings.antiPrivate = true
 if (!('antiCall' in settings)) settings.antiCall = true
 if (!('antiSpam' in settings)) settings.antiSpam = true 
 if (!('modoia' in settings)) settings.modoia = false
@@ -1307,8 +1307,8 @@ if (xp > 2000)
 m.reply('Exp limit') // Hehehe
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-//this.reply(m.chat, `🐈 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎`, m)
-this.sendMessage(m.chat, {text: `🐈 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
+//this.reply(m.chat, `😔 𝕹𝖔 𝖙𝖎𝖊𝖓𝖊 𝖒𝖔𝖓𝖊𝖞`, m)
+this.sendMessage(m.chat, {text: `😔 𝕹𝖔 𝖙𝖎𝖊𝖓𝖊 𝖒𝖔𝖓𝖊𝖞`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
 continue     
 }
 			
@@ -1384,7 +1384,9 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)
-m.reply(+m.money + ' 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎 🐱 𝙐𝙎𝘼𝘿𝙊(𝙎)')  
+m.reply(+m.money + ' 𝕸𝖔𝖓𝖊𝖞 💴 𝖀𝖘𝖆𝖉𝖔 (𝖘)')
+
+iOS Download 👉: https://apps.apple.com/app/id1636254820')  
 break
 }}} catch (e) {
 console.error(e)
@@ -1479,7 +1481,7 @@ pp = await this.profilePictureUrl(user, 'image')
 let apii = await this.getFile(pp)                                      
 const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
 const isBotAdminNn = botTt2?.admin === "admin" || false
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 😻') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '💜𝕾𝖚𝖕𝖊𝖗 𝕷𝖎𝖘𝖆𝕭𝖔𝖙💜') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
 			    
 if (chat.antifake && isBotAdminNn && action === 'add') {
@@ -1506,10 +1508,10 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": [wm, '😻 𝗦𝘂𝗽𝗲𝗿 ' + gt + ' 😻', '🌟 centergatabot.gmail.com'].getRandom(),
+"title": [wm, '😻 𝗦𝘂𝗽𝗲𝗿 ' + 𝕷𝖎𝖘𝖆 + ' 😻'].getRandom(),
 "containsAutoReply": true,
 "mediaType": 1, 
-sourceUrl: 'https://github.com/GataNina-Li/GataBot-MD' }}}, { quoted: fkontak2 })
+sourceUrl: 'https://github.com/MontseLeal/LisaBot' }}}, { quoted: fkontak2 })
 apii.data = ''
 //this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }, { quoted: fkontak2 })
 }}}
